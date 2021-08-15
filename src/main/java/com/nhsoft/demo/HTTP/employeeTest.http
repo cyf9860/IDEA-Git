@@ -1,0 +1,50 @@
+##存数据
+POST http://localhost:8080/add
+Content-Type: application/json
+
+{
+  "systemBookCode": "9994",
+  "branchNum": 6,
+
+  "employeeCode": "32",
+  "employeeName": "rose",
+  "employeeTypeNum": 1,
+  "employeeIdCode": "330225198805085566",
+  "employeeLinktel": "15258692568",
+  "employeeActived": 0,
+  "employeeMemo": "暂无",
+  "employeeHireDate": "2021-07-08"
+}
+
+###查询
+GET  http://localhost:8080/getEmployee?systemBookCode=9994
+
+
+###查询单个员工
+GET  http://localhost:8080/getOne?systemBookCode=9994&branchNum=6&employeeNum=52
+
+###删除员工
+DELETE http://localhost:8080/delete?systemBookCode=9994&branchNum=10&employeeNum=11
+
+###模糊查询
+GET  http://localhost:8080/getEmployee?systemBookCode=9994&pageNum=1&pageSize=10
+
+###更新员工
+POST http://localhost:8080/updateEmployee
+Content-Type: application/json
+
+{
+  "systemBookCode": "9994",
+  "branchNum": 6,
+  "employeeNum": 52,
+  "employeeCode": "5",
+  "employeeName": "jack",
+  "employeeTypeNum": 1,
+  "employeeIdCode": "330225198805085566",
+  "employeeLinktel": "15258692568",
+  "employeeActived": 0,
+  "employeeMemo": "暂无",
+  "employeeHireDate": "2021-07-08"
+}
+
+###

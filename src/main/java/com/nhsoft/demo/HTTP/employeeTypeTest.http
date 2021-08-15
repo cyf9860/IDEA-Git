@@ -1,0 +1,34 @@
+###查询
+GET  http://localhost:8080/findAllType?systemBookCode=9994&employeeTypeNum=2
+
+###添加
+POST  http://localhost:8080/addType
+Content-Type: application/json
+
+{
+   "systemBookCode": "9994",
+
+   "employeeTypeCode": "005",
+   "employeeTypeName": "test",
+   "employeeTypeParentNum": 1
+}
+
+###更新类型
+POST  http://localhost:8080/updateType
+Content-Type: application/json
+
+{
+  "systemBookCode": "9994",
+  "employeeTypeNum": 20,
+  "employeeTypeCode": "haha",
+  "employeeTypeName": "test",
+  "employeeTypeParentNum": 2
+}
+
+###删除类型
+DELETE  http://localhost:8080/deleteType?systemBookCode=9994&employeeTypeNum=23
+
+###查询最新主键
+GET  http://localhost:8080/getLastEmployeeTypeNum?systemBookCode=9994
+
+###

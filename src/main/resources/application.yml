@@ -1,0 +1,20 @@
+# 应用名称
+spring:
+  application:
+    name: demo
+  server:
+    port: 8080
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-bp125y2095k0z14ou5o.mysql.rds.aliyuncs.com:3306/temp_mock?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSL=false
+    username: temp_mock
+    password: 4uPFuNC5Xm0StRydg0UU
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 1
+
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: false
+    show-sql: true
