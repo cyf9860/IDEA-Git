@@ -25,6 +25,7 @@ public class Test {
         branchs.put("2", "门店2");
         branchs.put("3", "门店3");
         System.out.println("数据初始化完成");
+        System.out.println("hah");
     }
 
 }
